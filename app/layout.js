@@ -1,3 +1,5 @@
+import Footer from './components/Footer'
+import Header from './components/Header'
 import './globals.css'
 import { Noto_Sans_Display } from "next/font/google"
 
@@ -15,7 +17,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`dark:bg-[#100916] dark:text-white ${notoSans.className}`}>{children}</body>
+      <body className={`dark:bg-[#100916] dark:text-white ${notoSans.className}`}>
+        <Header />
+        {children}
+        <Footer />
+        </body>
       {/* <body className={`dark:bg-[#0B1229]`}>{children}</body> */}
     </html>
   )
