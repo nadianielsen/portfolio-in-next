@@ -8,10 +8,12 @@ export default function Home() {
 
   return (
     <main className="">
-      <article className="flex flex-col w-full h-screen bg-gradient-to-t from-black to-transparent">
-          <h1 className={`text-6xl ${prata.className} justify-center items-center my-32 z-10`}>Welcome to my portfolio</h1>
-          <span className="w-80 h-4 border-b justify-center items-center"></span>
-          <img src={"/gallery/hero-portfolio.jpg"} className="w-full h-full object-cover absolute -z-10 "/>
+      <article className="flex flex-col h-screen bg-gradient-to-t from-[#161416] to-transparent justify-center items-center">
+          <img src={"/gallery/hero-portfolio.jpg"} className="w-full h-full object-cover absolute -z-10 opacity-75"/>
+          <div className="border w-[40rem] h-[20rem]"></div>
+      </article>
+      <article className="h-screen">
+
       </article>
       {/* some borders to split while scrolling down page */}
       {/* maybe a hero that fills half of the width with text on the right side of it */}

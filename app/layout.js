@@ -3,9 +3,9 @@ import FooterWrapper from './components/FooterWrapper'
 import Header from './components/Header'
 import PageWrapper from './components/PageWrapper'
 import './globals.css'
-import { Noto_Sans_Display } from "next/font/google"
+import { Roboto } from "next/font/google"
 
-const notoSans = Noto_Sans_Display({subsets: ['latin'], weight: "300" })
+const notoSans = Roboto({subsets: ['latin'], weight: "300" })
 
 export const metadata = {
   title: 'Create Next App',
@@ -19,14 +19,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`dark:bg-[#0e0e0f] dark:text-white ${notoSans.className}`}>
-        {/* <PageWrapper> */}
+      <body className={`dark:bg-[#161416] dark:text-white ${notoSans.className}`}>
+        <PageWrapper>
           <Header />
           {children}        
-          {/* </PageWrapper> */}
-          <FooterWrapper>
+          {/* <FooterWrapper>
             <Footer />
-          </FooterWrapper>
+          </FooterWrapper> */}
+          </PageWrapper>
         </body>
       {/* <body className={`dark:bg-[#0B1229]`}>{children}</body> */}
     </html>

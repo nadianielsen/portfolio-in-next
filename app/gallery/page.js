@@ -76,9 +76,6 @@ const Gallery = () => {
 
     return (
         <main className="grid ">
-            <section className="w-full h-screen grid relative">
-               
-            </section>
             {/* <section className="flex">
                 <div className="w-[50%] h-screen bg-black flex flex-col justify-center items-center">
                     <div className="w-60 h-[25rem] bg-white rounded-t-full"></div>
