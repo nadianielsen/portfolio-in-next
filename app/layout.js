@@ -1,5 +1,7 @@
 import Footer from './components/Footer'
+import FooterWrapper from './components/FooterWrapper'
 import Header from './components/Header'
+import PageWrapper from './components/PageWrapper'
 import './globals.css'
 import { Noto_Sans_Display } from "next/font/google"
 
@@ -17,10 +19,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`dark:bg-[#100916] dark:text-white ${notoSans.className}`}>
-        <Header />
-        {children}
-        <Footer />
+      <body className={`dark:bg-[#0e0e0f] dark:text-white ${notoSans.className}`}>
+        {/* <PageWrapper> */}
+          <Header />
+          {children}        
+          {/* </PageWrapper> */}
+          <FooterWrapper>
+            <Footer />
+          </FooterWrapper>
         </body>
       {/* <body className={`dark:bg-[#0B1229]`}>{children}</body> */}
     </html>
